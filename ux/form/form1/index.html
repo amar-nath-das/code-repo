@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="commonLayout">
+    <div class="mainContent">
+        <!-- login -->
+        <div class="loginForm">
+            <h2>Login</h2>
+            <p>Login to your account to start filtering your Facebook post</p>
+            <div class="formWrap">
+                <!-- error message -->
+                <div class="errorMessage">
+                    <p class="error"></p>
+                </div>
+                <form action="#">
+                    <div class="field emailBackground">
+                        <input type="email" id="email" placeholder="Your email address">
+                        <!--add class="error" for wrong input-->
+                        <span></span>
+                    </div>
+                    <div class="field passwordBackground">
+                        <input type="password" id="pass" placeholder="Your password">
+                        <span></span>
+                        <a href="passwordrecovery.html" class="forgot">Forgot?</a>
+                    </div>
+                    <div class="buttonWrap">
+                        <button type="submit" id="login" class="button blueRoundButton loginButton">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

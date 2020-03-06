@@ -1,0 +1,470 @@
+/* fonts */
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/HelveticaNeue.ttf") format("truetype"),
+    url("./fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  outline: none;
+  box-shadow: none;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "HelveticaNeue";
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4363ba;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #65beff;
+  border-radius: 3px;
+}
+
+/* Lists==================== */
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links, inputs and Buttons==================== */
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+a,
+.btn,
+.button,
+button,
+input[type="button"],
+input[type="button"],
+input[type="submit"],
+input[type="submit"],
+select {
+  outline: none;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  min-height: 40px;
+  font-size: 16px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+input::-ms-clear,
+input:-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  padding: 5px 10px;
+}
+
+:disabled,
+::disabled {
+  cursor: not-allowed;
+}
+
+:readonly,
+::readonly {
+  cursor: default;
+}
+
+::-webkit-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+/* Tables==================== */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+}
+
+/* Headings==================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Other elements==================== */
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* p + p {
+    margin-top: 15px;
+  } */
+
+br,
+.clear {
+  clear: both;
+}
+
+audio,
+video {
+  display: block;
+  width: 100%;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+
+.blueRoundButton {
+  background-color: #4363ba;
+  border-radius: 42px;
+  box-shadow: 0 0 15px 3px #4363ba4b;
+  height: 44px;
+  width: 120px;
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  text-transform: capitalize;
+  margin: 0px auto;
+}
+
+.blueRoundButton:hover {
+  background: #65beff;
+}
+.mainContent {
+  padding: 30px 28px 0px 28px;
+  background: #f7fbff;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 500px;
+  margin: 0px auto;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 40px 1px #e3e3e3;
+  border-radius: 5px;
+}
+
+.loginForm h2 {
+  color: #000;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.loginForm h2:after {
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 20px;
+}
+
+.loginForm p {
+  color: #96adc7;
+  font-size: 12px;
+  margin-bottom: 38px;
+}
+
+.loginForm .formWrap {
+  position: relative;
+}
+
+.errorMessage p {
+  margin-bottom: 9px;
+  margin-top: -23px;
+}
+
+.success {
+  color: #27c940 !important;
+}
+
+.error {
+  color: #f85e39 !important;
+}
+
+.warning {
+  color: #ffbd2e !important;
+}
+
+.loginForm .field {
+  margin-bottom: 20px;
+}
+
+.loginForm input {
+  color: #96adc7;
+  font-size: 15px;
+  border: none;
+  margin-left: 37px;
+  font-family: "HelveticaNeue";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(247, 251, 255, 1) inset !important;
+  -webkit-text-fill-color: #96adc7 !important;
+}
+
+.loginForm input.error {
+  color: #f85e39;
+}
+
+.loginForm input.succes {
+  color: #27c940;
+}
+
+.loginForm input.warning {
+  color: #ffbd2e;
+}
+
+.loginForm input::-webkit-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::-moz-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input:-ms-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::-ms-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input[type="email"] {
+  width: 295px;
+}
+
+.loginForm .emailBackground {
+  background: url("./images/email.svg") no-repeat 0% 50%;
+}
+
+.loginForm input[type="password"] {
+  width: 250px;
+}
+
+.loginForm .passwordBackground {
+  background: url("./images/password.svg") no-repeat 4px 50%;
+}
+
+.loginForm .field {
+  position: relative;
+}
+
+.loginForm .field span {
+  background-color: #dee6ef;
+  height: 1px;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.loginForm .field p {
+  display: block;
+  width: 100%;
+  position: absolute;
+  font-size: 12px;
+  color: #f85e39;
+}
+
+.loginForm .field span::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transition: 0.5s all ease 0s;
+  transition: 0.5s all ease 0s;
+  background: transparent;
+}
+
+.field input:focus + span::after {
+  background: #4363ba;
+  width: 100%;
+  left: 0;
+}
+
+.field input.error + span::after {
+  background: #f85e39;
+  width: 100%;
+  left: 0;
+}
+
+.field input.success + span::after {
+  background: #27c940;
+  width: 100%;
+  left: 0;
+}
+
+.field input.warning + span::after {
+  background: #ffbd2e;
+  width: 100%;
+  left: 0;
+}
+
+.forgot {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  color: #4363ba;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.forgot:hover {
+  color: #737373;
+}
+
+.loginButton {
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
