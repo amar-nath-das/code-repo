@@ -233,7 +233,7 @@ video {
   background-color: transparent;
 }
 
-.blueRoundButton {
+.blueOvalButton {
   background-color: #4363ba;
   border-radius: 42px;
   box-shadow: 0 0 15px 3px #4363ba4b;
@@ -246,7 +246,7 @@ video {
   margin: 0px auto;
 }
 
-.blueRoundButton:hover {
+.blueOvalButton:hover {
   background: #65beff;
 }
 .mainContent {
