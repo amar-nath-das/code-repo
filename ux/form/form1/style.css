@@ -250,7 +250,6 @@ video {
   background: #65beff;
 }
 .mainContent {
-  padding: 30px 28px 0px 28px;
   background: #f7fbff;
   -webkit-box-flex: 1;
   flex: 1 1 auto;
@@ -268,7 +267,9 @@ video {
   box-shadow: 0 0 40px 1px #e3e3e3;
   border-radius: 5px;
 }
-
+.loginForm {
+  padding: 30px 28px;
+}
 .loginForm h2 {
   color: #000;
   font-size: 22px;
@@ -316,15 +317,11 @@ video {
   color: #ffbd2e !important;
 }
 
-.loginForm .field {
-  margin-bottom: 20px;
-}
-
 .loginForm input {
   color: #96adc7;
   font-size: 15px;
   border: none;
-  margin-left: 37px;
+  width: 100%;
   font-family: "HelveticaNeue";
 }
 
@@ -378,32 +375,30 @@ input:-webkit-autofill:active {
   font-family: "HelveticaNeue";
 }
 
-.loginForm input[type="email"] {
-  width: 295px;
-}
-
 .loginForm .emailBackground {
   background: url("./images/email.svg") no-repeat 0% 50%;
-}
-
-.loginForm input[type="password"] {
-  width: 250px;
+  padding-left: 37px;
 }
 
 .loginForm .passwordBackground {
   background: url("./images/password.svg") no-repeat 4px 50%;
+  padding-left: 37px;
 }
 
 .loginForm .field {
   position: relative;
 }
-
+.loginForm .field + .field {
+  margin-top: 20px;
+}
 .loginForm .field span {
   background-color: #dee6ef;
   height: 1px;
   display: block;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .loginForm .field p {
@@ -463,8 +458,6 @@ input:-webkit-autofill:active {
 .forgot:hover {
   color: #737373;
 }
-
-.loginButton {
-  margin-top: 26px;
-  margin-bottom: 30px;
+.buttonWrap {
+  margin-top: 40px;
 }
