@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../commonStyle.css">
+</head>
+
+<body>
+    <div class="mainContent">
+        <!-- start -->
+        <!-- login -->
+        <div class="loginForm">
+            <h2>Login</h2>
+            <p>Login to your account to start filtering your Facebook post</p>
+            <div class="formWrap">
+                <!-- server error message -->
+                <div class="errorMessage">
+                    <p class="error">Server side error message</p>
+                </div>
+                <form action="#">
+                    <div class="field emailBackground">
+                        <input type="email" id="email" placeholder="Your email address">
+                        <!--add class="error" for wrong input-->
+                        <span></span>
+                        <p>Some wrong text</p>
+                    </div>
+                    <div class="field passwordBackground">
+                        <input type="password" id="pass" placeholder="Your password">
+                        <span></span>
+                        <a href="passwordrecovery.html" class="forgot">Forgot?</a>
+                    </div>
+                    <div class="buttonWrap">
+                        <button type="submit" id="login" class="button blueOvalButton loginButton">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</body>
+
+</html>

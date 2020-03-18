@@ -1,0 +1,151 @@
+.buttonWrap:nth-of-type(1) {
+  position: fixed;
+  left: 33.333%;
+}
+.buttonWrap:nth-of-type(2) {
+  position: fixed;
+  left: 66.667%;
+}
+
+.buttonWrap {
+  border-radius: 50%;
+  width: 89px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #b9b9b9;
+}
+.buttonWrap button {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+  outline: none;
+}
+.ripple span {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 1px solid red;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.buttonWrap:hover span,
+.buttonWrap span:hover,
+.buttonWrap button:hover ~ span {
+  animation-play-state: paused;
+}
+.ripple span:nth-of-type(1) {
+  -webkit-animation: panOutb 3s linear infinite forwards;
+  animation: panOutb 3s linear infinite forwards;
+}
+
+.ripple span:nth-of-type(2) {
+  -webkit-animation: panOutb2 3s linear infinite forwards;
+  animation: panOutb2 3s linear infinite forwards;
+}
+
+.ripple span:nth-of-type(3) {
+  -webkit-animation: panOutb3 3s linear infinite forwards;
+  animation: panOutb3 3s linear infinite forwards;
+}
+
+.ripple span:nth-of-type(4) {
+  -webkit-animation: panOutb4 3s linear infinite forwards;
+  animation: panOutb4 3s linear infinite forwards;
+}
+
+@keyframes panOutb {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes panOutb2 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  45% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes panOutb3 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes panOutb4 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  95% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

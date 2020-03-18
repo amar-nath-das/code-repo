@@ -1,0 +1,208 @@
+.btnCircle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  background: #0cd377;
+  width: 57px;
+  height: 57px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+  position: relative;
+  box-shadow: 0 0 0 10px #f7fbff;
+  z-index: 1;
+}
+.btnCircle {
+  background: #b9b9b9;
+  width: 90px;
+  height: 90px;
+  box-shadow: none;
+  outline: none;
+}
+.btnCircle svg:not(.workSVG) {
+  display: none;
+}
+.workSVG {
+  display: block;
+  margin-top: -4px;
+}
+.btnCircle svg {
+  z-index: 1;
+  position: relative;
+  vertical-align: middle;
+}
+.btnCircle svg .a {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+.btnCircle span {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 1px solid #b9b9b9;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+}
+/* for hover */
+/* .btnCircle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+  border: 0px solid #ff5f57;
+  -webkit-transition: all 0.4s ease 0.15s;
+  transition: all 0.4s ease 0.15s;
+}
+.btnCircle:hover:before {
+  border: 15px solid #ff5f57;
+  background: #ff5f57;
+  -webkit-transition: all 0.4s ease 0.15s;
+  transition: all 0.4s ease 0.15s;
+  border: 15px solid rgba(65, 211, 118, 0);
+} */
+.btnCircle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  border-radius: 50%;
+  width: 100%;
+  height: 102%;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
+}
+/* ripple animation */
+.btnCircle span:nth-of-type(1) {
+  -webkit-animation: panOut 1s linear infinite forwards;
+  animation: panOut 1s linear infinite forwards;
+}
+
+.btnCircle span:nth-of-type(2) {
+  -webkit-animation: panOut2 1s linear infinite forwards;
+  animation: panOut2 1s linear infinite forwards;
+}
+
+.btnCircle span:nth-of-type(3) {
+  -webkit-animation: panOut3 1s linear infinite forwards;
+  animation: panOut3 1s linear infinite forwards;
+}
+
+.btnCircle span:nth-of-type(4) {
+  -webkit-animation: panOut4 1s linear infinite forwards;
+  animation: panOut4 1s linear infinite forwards;
+}
+@keyframes panOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes panOut2 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(2.9);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes panOut3 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  35% {
+    opacity: 1;
+  }
+  38% {
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(3.6);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes panOut4 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  35% {
+    opacity: 1;
+  }
+  42% {
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

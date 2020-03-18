@@ -1,0 +1,264 @@
+.blueOvalButton {
+  background-color: #4363ba !important;
+  border-radius: 42px;
+  box-shadow: 0 0 15px 3px #4363ba4b;
+  height: 44px;
+  width: 120px;
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  text-transform: capitalize;
+  margin: 0px auto;
+}
+
+.blueOvalButton:hover {
+  background: #65beff !important;
+}
+.mainContent {
+  background: #f7fbff;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 15px;
+  margin: 0px auto;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+}
+.loginForm {
+  padding: 30px 28px;
+  background: #f7fbff;
+  box-shadow: 0 0 40px 1px #e3e3e3;
+}
+.loginForm h2 {
+  color: #000;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.loginForm h2:after {
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 20px;
+}
+
+.loginForm p {
+  color: #96adc7;
+  font-size: 12px;
+  margin-bottom: 38px;
+}
+
+.loginForm .formWrap {
+  position: relative;
+}
+
+.errorMessage p {
+  margin-bottom: 9px;
+  margin-top: -23px;
+}
+
+.success {
+  color: #27c940 !important;
+}
+
+.error {
+  color: #f85e39 !important;
+}
+
+.warning {
+  color: #ffbd2e !important;
+}
+
+.loginForm input {
+  color: #96adc7;
+  font-size: 15px;
+  border: none;
+  width: 100%;
+  font-family: "HelveticaNeue";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(247, 251, 255, 1) inset !important;
+  -webkit-text-fill-color: #96adc7 !important;
+}
+
+.loginForm input.error {
+  color: #f85e39;
+}
+
+.loginForm input.succes {
+  color: #27c940;
+}
+
+.loginForm input.warning {
+  color: #ffbd2e;
+}
+
+.loginForm input::-webkit-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::-moz-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input:-ms-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::-ms-input-placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm input::placeholder {
+  color: #dee6ef;
+  font-size: 15px;
+  font-family: "HelveticaNeue";
+}
+
+.loginForm .emailBackground {
+  background: url("./images/email.svg") no-repeat 0% 50%;
+}
+
+.loginForm .passwordBackground {
+  background: url("./images/password.svg") no-repeat 4px 50%;
+}
+
+.loginForm .field {
+  position: relative;
+  padding-left: 37px;
+}
+.loginForm .field + .field {
+  margin-top: 20px;
+}
+.loginForm .field span {
+  background-color: #dee6ef;
+  height: 1px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.loginForm .field p {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  color: #f85e39;
+  margin-top: 5px;
+  margin-left: 9px;
+}
+
+.loginForm .field span::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transition: 0.5s all ease 0s;
+  transition: 0.5s all ease 0s;
+  background: transparent;
+}
+
+.field input:focus + span::after {
+  background: #4363ba;
+  width: 100%;
+  left: 0;
+}
+
+.field input.error + span::after {
+  background: #f85e39;
+  width: 100%;
+  left: 0;
+}
+
+.field input.success + span::after {
+  background: #27c940;
+  width: 100%;
+  left: 0;
+}
+
+.field input.warning + span::after {
+  background: #ffbd2e;
+  width: 100%;
+  left: 0;
+}
+
+.forgot {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  color: #4363ba;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.forgot:hover {
+  color: #737373;
+}
+.buttonWrap {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 480px) {
+  .loginForm input {
+    font-size: 13px;
+  }
+  .loginForm .field {
+    padding-left: 25px;
+  }
+  .loginForm .emailBackground {
+    background-size: 20px;
+  }
+  .loginForm .passwordBackground {
+    background-size: 17px;
+    background-position: 2px;
+  }
+  .loginForm input::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  .loginForm input::-moz-placeholder {
+    font-size: 13px;
+  }
+  .loginForm input:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  .loginForm input::-ms-input-placeholder {
+    font-size: 13px;
+  }
+  .loginForm input::placeholder {
+    font-size: 13px;
+  }
+  .loginForm .passwordBackground input{
+    width: 80%;
+  }
+}

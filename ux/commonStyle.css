@@ -1,0 +1,234 @@
+/* fonts */
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../ux/form/form1/fonts/HelveticaNeue.eot?#iefix")
+      format("embedded-opentype"),
+    url("../ux/form/form1/fonts/HelveticaNeue.ttf") format("truetype"),
+    url("../ux/form/form1/fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  outline: none;
+  box-shadow: none;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "HelveticaNeue";
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4363ba;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #65beff;
+  border-radius: 3px;
+}
+
+/* Lists==================== */
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links, inputs and Buttons==================== */
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+a,
+.btn,
+.button,
+button,
+input[type="button"],
+input[type="button"],
+input[type="submit"],
+input[type="submit"],
+select {
+  outline: none;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  min-height: 40px;
+  font-size: 16px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+input::-ms-clear,
+input:-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+:disabled,
+::disabled {
+  cursor: not-allowed;
+}
+
+:readonly,
+::readonly {
+  cursor: default;
+}
+
+::-webkit-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+::placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+/* Tables==================== */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+}
+
+/* Headings==================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Other elements==================== */
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* p + p {
+      margin-top: 15px;
+    } */
+
+br,
+.clear {
+  clear: both;
+}
+
+audio,
+video {
+  display: block;
+  width: 100%;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.button {
+  border: none;
+  background: transparent;
+}
