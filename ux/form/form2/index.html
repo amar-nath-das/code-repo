@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="../../commonStyle.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../commonStyle.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-	<body
-		style="position: fixed;transform: translate(-50%, -50%);top: 50%;left: 50%;width: 444px;"
-	>
-		<div class="formContainer">
-			<h2>Login to your account</h2>
-			<div class="formWrap">
-				<form action="#">
-					<!-- <div class="serverErrMsg">
+  <body class="bodyClass">
+    <!-- start -->
+    <!-- login -->
+    <div class="formContainer">
+      <h2>Login to your account</h2>
+      <div class="formWrap">
+        <form action="#">
+          <!-- server error message -->
+          <!-- <div class="serverErrMsg">
                     Some wrong text
                 </div> -->
-					<div class="field">
-						<label>email Address</label>
-						<input type="email" placeholder="jon@example.com" />
-						<!-- <div class="errMsg">
+          <div class="field">
+            <label>email Address</label>
+            <input type="email" placeholder="jon@example.com" />
+            <!-- <div class="errMsg">
                         Some wrong text
                     </div> -->
-					</div>
-					<div class="field">
-						<label>password</label>
-						<input type="password" placeholder="**********" />
-					</div>
-					<div class="passControl clearfix">
-						<a class="forgotPassword" href="#">Forgot Password?</a>
-					</div>
-					<div class="buttonWrap">
-						<button type="submit" class="button">login</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</body>
+          </div>
+          <div class="field">
+            <label>password</label>
+            <input type="password" placeholder="**********" />
+            <span class="password-view"
+              ><i class="fa fa-eye" aria-hidden="true"></i
+            ></span>
+          </div>
+          <div class="passControl clearfix">
+            <div class="radioFilterWrap">
+              <label class="checkboxWrap"
+                >remember me
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <a class="forgotPassword" href="#">Forgot Password?</a>
+          </div>
+          <div class="buttonWrap">
+            <button type="submit" class="button">login</button>
+          </div>
+          <p class="notReg">Not registered yet?<a href="#"> Sign Up Now</a></p>
+        </form>
+      </div>
+    </div>
+    <!-- end -->
+  </body>
 </html>

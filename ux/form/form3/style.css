@@ -15,10 +15,13 @@
   float: left;
   width: 122px;
   height: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menuWrap ul {
@@ -28,30 +31,33 @@
 
 .menuWrap ul li {
   padding: 40px 30px;
-  border-left: 3px solid #D8D8D8;
+  border-left: 3px solid #d8d8d8;
   margin-bottom: 20px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .menuWrap ul li a {
-  color: #D8D8D8;
+  color: #d8d8d8;
   font-size: 17px;
   text-align: center;
   line-height: 26px;
   text-transform: capitalize;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: 500;
 }
 
 .menuWrap ul li:hover,
 .menuWrap ul li.active {
-  border-color: #037AC0;
+  border-color: #037ac0;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .menuWrap ul li:hover a,
 .menuWrap ul li.active a {
-  color: #037AC0;
+  color: #037ac0;
 }
 
 /* loginGraphic */
@@ -59,9 +65,12 @@
   float: left;
   width: 292px;
   height: 100%;
-  background: #0372BC;
+  background: #0372bc;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   height: 100%;
 }
@@ -76,7 +85,7 @@
 .formWrap h2 {
   color: #212121;
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   text-transform: capitalize;
   margin-bottom: 31px;
@@ -84,13 +93,13 @@
 
 .squareButton {
   border-radius: 5px;
-  box-shadow: 0px 2px 6px #0000001A;
+  box-shadow: 0px 2px 6px #0000001a;
   height: 54px;
-  background: #FFFFFF;
+  background: #ffffff;
   font-size: 18px;
   color: #212121;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
   text-align: center;
   margin-bottom: 32px;
@@ -102,7 +111,7 @@
 }
 
 .line {
-  background: #E0E0E0;
+  background: #e0e0e0;
   height: 1px;
   width: 100%;
   position: relative;
@@ -117,20 +126,20 @@
   width: 42px;
   background: #fff;
   font-size: 16px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   margin: 0px auto;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.field+.field {
+.field + .field {
   margin-top: 14px;
 }
 
 .field label {
   color: #212121;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   font-weight: 600;
   margin-bottom: 16px;
@@ -142,10 +151,36 @@
   border-radius: 5px;
   border: none;
   width: 100%;
+  padding: 14px 16px;
 }
-
+.field input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #bcbcbc;
+  font-family: "Roboto", sans-serif;
+}
+.field input::-moz-placeholder {
+  font-size: 18px;
+  color: #bcbcbc;
+  font-family: "Roboto", sans-serif;
+}
+.field input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #bcbcbc;
+  font-family: "Roboto", sans-serif;
+}
+.field input::placeholder {
+  font-size: 18px;
+  color: #bcbcbc;
+  font-family: "Roboto", sans-serif;
+}
+.field input[type="password"] {
+  padding-right: 40px;
+}
+.field .eyeBackground {
+  background: #fafafa url("./images/eye.svg") no-repeat 96% 50%;
+}
 .squareButton.blue {
-  background: #0372BC;
+  background: #0372bc;
   margin-top: 32px;
   color: #fff;
   letter-spacing: 1px;
@@ -153,10 +188,10 @@
 
 .formWrap a {
   font-size-adjust: 18px;
-  color: #0372BC;
+  color: #0372bc;
   text-align: center;
   font: 16px;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
