@@ -1,3 +1,14 @@
+/* fonts */
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/HelveticaNeue.ttf") format("truetype"),
+    url("./fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .blueOvalButton {
   background-color: #4363ba !important;
   border-radius: 42px;
@@ -9,6 +20,7 @@
   display: block;
   text-transform: capitalize;
   margin: 0px auto;
+  font-family: "HelveticaNeue";
 }
 
 .blueOvalButton:hover {
@@ -92,15 +104,6 @@
   width: 100%;
   font-family: "HelveticaNeue";
 }
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px rgba(247, 251, 255, 1) inset !important;
-  -webkit-text-fill-color: #96adc7 !important;
-}
-
 .loginForm input.error {
   color: #f85e39;
 }

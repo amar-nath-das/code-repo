@@ -1,15 +1,3 @@
-/* fonts */
-
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url("../ux/form/form1/fonts/HelveticaNeue.eot?#iefix")
-      format("embedded-opentype"),
-    url("../ux/form/form1/fonts/HelveticaNeue.ttf") format("truetype"),
-    url("../ux/form/form1/fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -33,7 +21,6 @@ html {
   font-weight: normal;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  font-family: "HelveticaNeue";
 }
 
 ::-webkit-scrollbar {
@@ -231,4 +218,11 @@ video {
 .button {
   border: none;
   background: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(247, 251, 255, 1) inset !important;
+  -webkit-text-fill-color: #96adc7 !important;
 }

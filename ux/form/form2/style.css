@@ -1,4 +1,4 @@
-.bodyClass {
+body {
   font-family: "Roboto", sans-serif;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
@@ -58,6 +58,7 @@
   color: #818e9b;
   font-size: 14px;
   background-color: #fff;
+  font-family: "Roboto", sans-serif;
   border-radius: 3px;
 }
 .formWrap .field input::-webkit-input-placeholder {
@@ -214,6 +215,7 @@
   height: 48px;
   margin: 30px 0;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 .formWrap .notReg {
   color: #212529;

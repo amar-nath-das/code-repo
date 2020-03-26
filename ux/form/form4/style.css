@@ -1,0 +1,252 @@
+body {
+  font-family: "Oxygen", sans-serif;
+}
+.comWidth {
+  width: 100%;
+  max-width: 1088px;
+  margin: 70px auto;
+}
+
+.formContainer {
+  background: #fff;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.16);
+  height: 650px;
+}
+
+/* formWrap */
+.formWrap {
+  padding: 80px;
+  float: left;
+  width: 50%;
+}
+
+.formWrap h2 {
+  color: #212121;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 100px;
+}
+
+.field + .field {
+  margin-top: 45px;
+}
+
+.field label {
+  background: #3256ad;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  float: left;
+  margin: 0 0 -10px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #3256ad;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #586677;
+  font-size: 15px;
+  padding: 13px 10px 7px;
+  font-weight: 700;
+  font-family: "Oxygen", sans-serif;
+}
+.field input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Oxygen", sans-serif;
+}
+.field input::-moz-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Oxygen", sans-serif;
+}
+.field input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Oxygen", sans-serif;
+}
+.field input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Oxygen", sans-serif;
+}
+.field input::placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Oxygen", sans-serif;
+}
+.squareButton.blue {
+  background: #0372bc;
+  margin-top: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.formWrap a {
+  color: #0372bc;
+  text-align: center;
+  font-weight: 500;
+}
+.formWrap .passControl {
+  margin-top: 25px;
+}
+
+.formWrap a {
+  color: #3256ad;
+  font-size: 13px;
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 3px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.formWrap a:hover {
+  color: #3256ad;
+  border-bottom: 1px solid #3256ad;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.radioFilterWrap {
+  display: inline-block;
+}
+/* checkbox */
+.checkboxWrap {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: auto;
+  height: 16px;
+  position: relative;
+  text-transform: capitalize;
+  margin-right: 20px;
+  font-size: 13px;
+  color: #3256ad;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxWrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #3256ad;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxWrap:hover input ~ .checkmark {
+  background-color: #e3f0ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxWrap input:checked ~ .checkmark {
+  background-color: #3256ad;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxWrap input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxWrap .checkmark:after {
+  left: 4px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+.password-view {
+  position: absolute;
+  right: 15px;
+  top: 44px;
+  color: #7b7b7b;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.formWrap .buttonWrap button {
+  background: #3256ad;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  margin: 30px 0;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.formWrap .buttonWrap button:hover {
+  background: #123368;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formWrap .notReg {
+  color: #212529;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+}
+.formWrap .notReg a {
+  float: none;
+}
+/* loginGraphic */
+.loginGraphic {
+  float: right;
+  background: url("./images/Graphic.png") no-repeat;
+  height: 100%;
+  width: 50%;
+}
+.loginGraphic a {
+  padding: 40px 0 0 20px;
+  display: block;
+}
