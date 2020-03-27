@@ -31,7 +31,6 @@ body {
 }
 .formWrap .field {
   position: relative;
-  background: #fff;
 }
 .formWrap .field + .field {
   margin-top: 30px;
@@ -87,7 +86,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .formWrap .field input[type="password"] {
-  width: calc(100% - 38px);
+  padding-right: 42px;
 }
 
 .formWrap .field .errMsg {
@@ -121,11 +120,9 @@ body {
 }
 /* checkbox */
 .checkboxWrap {
-  position: relative;
   padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

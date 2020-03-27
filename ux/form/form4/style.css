@@ -128,15 +128,13 @@ body {
   position: relative;
   padding-left: 25px;
   margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
+  cursor: pointer;  
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: auto;
   height: 16px;
-  position: relative;
   text-transform: capitalize;
   margin-right: 20px;
   font-size: 13px;

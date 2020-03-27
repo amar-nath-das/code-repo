@@ -8,7 +8,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  font-family: "HelveticaNeue";
+}
 .blueOvalButton {
   background-color: #4363ba !important;
   border-radius: 42px;
@@ -186,13 +188,12 @@
   left: 0;
 }
 
-.loginForm .field p {
+.loginForm .field.error p {
   display: block;
   position: absolute;
   font-size: 12px;
   color: #f85e39;
-  margin-top: 5px;
-  margin-left: 9px;
+  margin: 5px 5px 5px 9px;
 }
 
 .loginForm .field span::after {
@@ -316,11 +317,9 @@
 }
 /* checkbox */
 .checkboxWrap {
-  position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

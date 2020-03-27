@@ -1,0 +1,226 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.comWidth {
+  width: 100%;
+  max-width: 1088px;
+  margin: 70px auto;
+}
+
+/* formWrap */
+.formWrap {
+  padding: 98px 38px 38px 38px;
+  max-width: 412px;
+  background: #fff;
+  box-shadow: 0 18px 54px #a4b9d2;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+
+.field + .field {
+  margin-top: 30px;
+}
+.emailBackground {
+  background: url("./images/envalop.png") no-repeat 95% 54%;
+}
+.passwordBackground {
+  background: url("./images/password.png") no-repeat 95% 54%;
+}
+.field input {
+  display: block;
+  width: 100%;
+  height: 63px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  color: #586677;
+  font-size: 15px;
+  padding: 25px 50px 25px 25px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fcff;
+  box-shadow: 0 7px 49px #e6e6e6;
+  border: none;
+}
+.field input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Poppins", sans-serif;
+}
+.field input::-moz-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.field input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.field input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.field input::placeholder {
+  font-size: 15px;
+  color: #bcbcbc;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.squareButton.blue {
+  background: #0372bc;
+  margin-top: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.formWrap a {
+  color: #0372bc;
+  text-align: center;
+  font-weight: 500;
+}
+.formWrap .passControl {
+  margin-top: 25px;
+}
+
+.formWrap a {
+  color: #1fbec5;
+  font-size: 13px;
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.formWrap a:hover {
+  color: #1fbec5;
+  border-bottom: 1px solid #1fbec5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* checkbox */
+.checkboxWrap {
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: auto;
+  height: 16px;
+  text-transform: capitalize;
+  color: #1fbec5;
+  margin-left: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  float: left;
+  position: relative;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxWrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #1fbec5;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxWrap:hover input ~ .checkmark {
+  background-color: #e3f0ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxWrap input:checked ~ .checkmark {
+  background-color: #1fbec5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxWrap input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxWrap .checkmark:after {
+  left: 4px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+.password-view {
+  position: absolute;
+  right: 15px;
+  top: 44px;
+  color: #7b7b7b;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.formWrap .buttonWrap button {
+  background: #1fbec5;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.formWrap .buttonWrap button:hover {
+  background: #1a979c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formWrap .buttonWrap button img {
+  margin-right: 11px;
+  vertical-align: sub;
+}
+.formWrap .notReg {
+  color: #212529;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+}
+.formWrap .notReg a {
+  float: none;
+}
