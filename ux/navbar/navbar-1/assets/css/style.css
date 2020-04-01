@@ -111,7 +111,9 @@
     .header {
         padding: 20px 0;
     }
-
+    .mobileMenu-active {
+        overflow: hidden;
+    }
     .mobileMenu-active .btnMobileTrigger span:nth-child(1) {
         transform: rotate(35deg);
     }
