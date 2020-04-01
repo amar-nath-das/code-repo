@@ -20,52 +20,84 @@
   </head>
 
   <body>
-    <!-- start -->
-    <!-- login -->
-    <div class="formContainer">
-      <h2>Login to your account</h2>
-      <div class="formWrap">
-        <form action="#">
-          <!-- server error message -->
-          <!-- <div class="serverErrMsg">
+    <div class="comWidth">
+      <!-- start -->
+      <!-- login -->
+      <div class="formContainer">
+        <h2>Login to your account</h2>
+        <div class="formWrap">
+          <form action="#">
+            <!-- server error message -->
+            <!-- <div class="serverErrMsg">
             Some wrong text
           </div> -->
-          <div class="field">
-            <label>email Address</label>
-            <input type="email" placeholder="jon@example.com" />
-            <!-- error message -->
-            <!-- <div class="errMsg">
+            <div class="field">
+              <label>email Address</label>
+              <input type="email" placeholder="jon@example.com" />
+              <!-- error message -->
+              <!-- <div class="errMsg">
               Some wrong text
             </div> -->
-          </div>
-          <div class="field">
-            <label>password</label>
-            <input type="password" placeholder="**********" />
-            <span class="password-view"
-              ><i class="fa fa-eye" aria-hidden="true"></i
-            ></span>
-            <!-- error message -->
-            <!-- <div class="errMsg">
+            </div>
+            <div class="field">
+              <label>password</label>
+              <input type="password" placeholder="**********" />
+              <span class="password-view"
+                ><i class="fa fa-eye" aria-hidden="true"></i
+              ></span>
+              <!-- error message -->
+              <!-- <div class="errMsg">
               Some wrong text
             </div> -->
-          </div>
-          <div class="passControl clearfix">
+            </div>
+            <!-- textarea -->
+            <div class="field">
+              <label>comments</label>
+              <textarea placeholder="Comments"></textarea>
+              <span></span>
+            </div>
+            <!-- radio button -->
             <div class="radioFilterWrap">
-              <label class="checkboxWrap"
-                >remember me
-                <input type="checkbox" />
-                <span class="checkmark"></span>
+              <label class="cst-radio">
+                <input
+                  type="radio"
+                  name="postFilter"
+                  value="option1"
+                  checked
+                />option1
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option2" />option2
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option3" />option3
+                <span></span>
               </label>
             </div>
-            <a class="forgotPassword" href="#">Forgot Password?</a>
-          </div>
-          <div class="buttonWrap">
-            <button type="submit" class="button">login</button>
-          </div>
-          <p class="notReg">Not registered yet?<a href="#"> Sign Up Now</a></p>
-        </form>
+
+            <!-- checkbox -->
+            <div class="passControl clearfix">
+              <div class="radioFilterWrap">
+                <label class="checkboxWrap"
+                  >remember me
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <a class="forgotPassword" href="#">Forgot Password?</a>
+            </div>
+            <div class="buttonWrap">
+              <button type="submit" class="button">login</button>
+            </div>
+            <p class="notReg">
+              Not registered yet?<a href="#"> Sign Up Now</a>
+            </p>
+          </form>
+        </div>
       </div>
+      <!-- end -->
     </div>
-    <!-- end -->
   </body>
 </html>

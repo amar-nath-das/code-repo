@@ -16,27 +16,63 @@
   <body>
     <div class="comWidth">
       <!-- start -->
+      <!-- login -->
       <div class="formContainer clearfix">
         <div class="formWrap">
           <h2>login</h2>
           <!-- server error message -->
           <!-- <div class="errorMessage">
-            <p class="error">Server side error message</p>
-          </div> -->
+              <p class="error">Server side error message</p>
+            </div> -->
           <form action="#">
             <div class="field">
               <label>Email Address</label>
               <input type="email" placeholder="Enter email ID" />
+              <!-- error message -->
+              <!-- <div class="errMsg">
+                Some wrong text
+              </div> -->
             </div>
             <div class="field">
               <label>Password</label>
               <input type="password" placeholder="Enter your password" />
+              <!-- error message -->
+              <!-- <div class="errMsg">
+                Some wrong text
+              </div> -->
+            </div>
+            <!-- textarea -->
+            <div class="field commentsBackground fieldHeight error">
+              <label>comments</label>
+              <textarea placeholder="Comments"></textarea>
+              <span></span>
+            </div>
+            <!-- radio button -->
+            <div class="radioFilterWrap">
+              <label class="cst-radio">
+                <input
+                  type="radio"
+                  name="postFilter"
+                  value="option1"
+                  checked
+                />option1
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option2" />option2
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option3" />option3
+                <span></span>
+              </label>
             </div>
             <div class="passControl clearfix">
+              <!-- checkbox -->
               <div class="radioFilterWrap">
                 <label class="checkboxWrap"
                   >remember me
-                  <input type="checkbox" />
+                  <input type="checkbox" checked="checked" />
                   <span class="checkmark"></span>
                 </label>
               </div>

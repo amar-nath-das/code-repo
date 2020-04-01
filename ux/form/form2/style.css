@@ -1,13 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 444px;
 }
-
+.comWidth {
+  width: 100%;
+  max-width: 444px;
+  margin: 70px auto;
+}
 .formContainer {
   background: #f1f7ff;
   padding: 24px 30px;
@@ -32,7 +30,8 @@ body {
 .formWrap .field {
   position: relative;
 }
-.formWrap .field + .field {
+.formWrap .field + .field,
+.formWrap .field + .radioFilterWrap {
   margin-top: 30px;
 }
 
@@ -40,47 +39,51 @@ body {
   font-weight: 600;
   font-size: 13px;
   color: #000;
-  display: inline-block;
   padding-bottom: 10px;
   text-transform: capitalize;
   background: #f1f7ff;
   display: block;
 }
 
-.formWrap .field input {
+.formWrap .field input,
+.formWrap .field textarea {
   font-weight: 300;
   height: 55px;
-  border: 1px solid #fff;
+  border: 1px solid #0043ca38;
   display: block;
   width: 100%;
   padding: 10px;
   color: #818e9b;
   font-size: 14px;
-  background-color: #fff;
   font-family: "Roboto", sans-serif;
   border-radius: 3px;
 }
-.formWrap .field input::-webkit-input-placeholder {
+.formWrap .field input::-webkit-input-placeholder,
+.formWrap .field textarea::-webkit-input-placeholder {
   color: #dbdbdb;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.formWrap .field input::-moz-placeholder {
+.formWrap .field input::-moz-placeholder,
+.formWrap .field textarea::-moz-placeholder {
   color: #dbdbdb;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.formWrap .field input:-ms-input-placeholder {
+.formWrap .field input:-ms-input-placeholder,
+.formWrap .field textarea:-ms-input-placeholder {
   color: #dbdbdb;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.formWrap .field input::-ms-input-placeholder {
+.formWrap .field input::-ms-input-placeholder,
+.formWrap .field textarea::-ms-input-placeholder {
   color: #dbdbdb;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.formWrap .field input::placeholder {
+.formWrap .field input::placeholder,
+.formWrap .field textarea::placeholder {
   color: #dbdbdb;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -118,9 +121,73 @@ body {
 .radioFilterWrap {
   display: inline-block;
 }
-/* checkbox */
+/* radioFilterWrap */
+.radioFilterWrap {
+  margin-bottom: 27px;
+  font-size: 0;
+  position: relative;
+}
+.cst-radio {
+  display: inline-block;
+  width: auto;
+  height: 16px;
+  position: relative;
+  color: #000;
+  font-size: 13px;
+  text-transform: capitalize;
+  padding-left: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cst-radio + .cst-radio {
+  margin-left: 40px;
+}
+
+.cst-radio span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #0043ca;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+}
+
+.cst-radio span::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.cst-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+}
+
+.cst-radio input[type="radio"]:checked + span {
+  background-color: #0043ca;
+}
+/* tick mark checkbox */
 .checkboxWrap {
-  padding-left: 25px;
+  padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -130,10 +197,10 @@ body {
   width: auto;
   height: 16px;
   position: relative;
+  color: #96adc7;
+  font-size: 14px;
   text-transform: capitalize;
   margin-right: 20px;
-  font-size: 13px;
-  color: #000;
 }
 
 /* Hide the browser's default checkbox */
@@ -150,12 +217,11 @@ body {
   position: absolute;
   top: -1px;
   left: 0;
-  background-color: #ffffff;
-  transition: 0.3s;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
   border: 1px solid #0043ca;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
+  transition: 0.3s;
 }
 
 /* On mouse-over, add a grey background color */
@@ -166,7 +232,7 @@ body {
 
 /* When the checkbox is checked, add a blue background */
 .checkboxWrap input:checked ~ .checkmark {
-  background-color: #0043ca;
+  background-color: #e3f0ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -183,13 +249,17 @@ body {
 
 /* Style the checkmark/indicator */
 .checkboxWrap .checkmark:after {
-  left: 4px;
-  top: 4px;
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 50%;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #0043ca;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
 .password-view {
   position: absolute;
   right: 15px;
@@ -223,4 +293,7 @@ body {
   color: #0043ca;
   text-decoration: underline;
   font-size: 13px;
+}
+.formWrap .notReg a:hover {
+  text-decoration: none;
 }

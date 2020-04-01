@@ -10,7 +10,6 @@ body {
 .formContainer {
   background: #fff;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.16);
-  height: 650px;
 }
 
 /* formWrap */
@@ -19,19 +18,23 @@ body {
   float: left;
   width: 50%;
 }
-
+.formWrap .errorMessage {
+  color: #fd0000;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 .formWrap h2 {
   color: #212121;
   font-size: 24px;
   font-weight: 900;
   text-transform: capitalize;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
-.field + .field {
+.field + .field,
+.field + .radioFilterWrap {
   margin-top: 45px;
 }
-
 .field label {
   background: #3256ad;
   color: #fff;
@@ -43,9 +46,11 @@ body {
   margin: 0 0 -10px 10px;
   position: relative;
   z-index: 10;
+  text-transform: capitalize;
 }
 
-.field input {
+.field input,
+.field textarea {
   display: block;
   width: 100%;
   height: 50px;
@@ -53,37 +58,47 @@ body {
   border: 1px solid #3256ad;
   border-radius: 5px;
   outline: none;
-  background: #fff;
   color: #586677;
   font-size: 15px;
   padding: 13px 10px 7px;
   font-weight: 700;
   font-family: "Oxygen", sans-serif;
 }
-.field input::-webkit-input-placeholder {
+.field input::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Oxygen", sans-serif;
 }
-.field input::-moz-placeholder {
+.field input::-moz-placeholder,
+.field textarea::-moz-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Oxygen", sans-serif;
 }
-.field input:-ms-input-placeholder {
+.field input:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Oxygen", sans-serif;
 }
-.field input::-ms-input-placeholder {
+.field input::-ms-input-placeholder,
+.field textarea::-ms-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Oxygen", sans-serif;
 }
-.field input::placeholder {
+.field input::placeholder,
+.field textarea::placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Oxygen", sans-serif;
+}
+.formWrap .field .errMsg {
+  display: block;
+  color: #ff0000;
+  font-size: 12px;
+  margin: 5px 0 0;
 }
 .squareButton.blue {
   background: #0372bc;
@@ -123,22 +138,91 @@ body {
 .radioFilterWrap {
   display: inline-block;
 }
+.radioFilterWrap input[type="radio"] {
+  min-height: 20px;
+}
+/* radioFilterWrap */
+.radioFilterWrap {
+  margin-bottom: 27px;
+  font-size: 0;
+  position: relative;
+}
+.cst-radio {
+  display: inline-block;
+  /* width: 24%; */
+  width: auto;
+  height: 16px;
+  position: relative;
+  color: #96adc7;
+  font-size: 14px;
+  text-transform: capitalize;
+  /* margin-left: 24px; */
+  padding-left: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cst-radio + .cst-radio {
+  margin-left: 40px;
+}
+
+.cst-radio span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #4363ba;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+}
+
+.cst-radio span::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.cst-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+}
+
+.cst-radio input[type="radio"]:checked + span {
+  background-color: #4363ba;
+}
 /* checkbox */
 .checkboxWrap {
-  position: relative;
-  padding-left: 25px;
+  padding-left: 35px;
   margin-bottom: 12px;
-  cursor: pointer;  
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: auto;
   height: 16px;
+  position: relative;
+  color: #96adc7;
+  font-size: 14px;
   text-transform: capitalize;
   margin-right: 20px;
-  font-size: 13px;
-  color: #3256ad;
 }
 
 /* Hide the browser's default checkbox */
@@ -155,25 +239,22 @@ body {
   position: absolute;
   top: -1px;
   left: 0;
-  background-color: #ffffff;
-  -webkit-transition: 0.3s;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #4363ba;
   transition: 0.3s;
-  border: 1px solid #3256ad;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
 }
 
 /* On mouse-over, add a grey background color */
 .checkboxWrap:hover input ~ .checkmark {
   background-color: #e3f0ff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 /* When the checkbox is checked, add a blue background */
 .checkboxWrap input:checked ~ .checkmark {
-  background-color: #3256ad;
+  background-color: #e3f0ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -190,12 +271,15 @@ body {
 
 /* Style the checkmark/indicator */
 .checkboxWrap .checkmark:after {
-  left: 4px;
-  top: 4px;
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 50%;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #4363ba;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .password-view {
   position: absolute;
@@ -232,7 +316,7 @@ body {
   color: #212529;
   font-size: 12px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .formWrap .notReg a {
   float: none;
@@ -240,11 +324,10 @@ body {
 /* loginGraphic */
 .loginGraphic {
   float: right;
-  background: url("./images/Graphic.png") no-repeat;
-  height: 100%;
+  background: url(./images/Graphic.png) no-repeat 50% 50%;
+  height: calc(100vh - -230px);
   width: 50%;
 }
 .loginGraphic a {
-  padding: 40px 0 0 20px;
-  display: block;
+  display: inline-block;
 }

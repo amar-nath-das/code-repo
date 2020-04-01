@@ -16,7 +16,11 @@ body {
   border-radius: 20px;
   margin: 0px auto;
 }
-
+.formWrap .errorMessage {
+  color: #fd0000;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
 .field + .field {
   margin-top: 30px;
 }
@@ -38,8 +42,7 @@ body {
   padding: 25px 50px 25px 25px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  background-color: #f9fcff;
-  box-shadow: 0 7px 49px #e6e6e6;
+  box-shadow: 0 7px 49px #1fbec51c;
   border: none;
 }
 .field input::-webkit-input-placeholder {
@@ -70,6 +73,12 @@ body {
   color: #bcbcbc;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
+}
+.formWrap .field .errMsg {
+  display: block;
+  color: #ff0000;
+  font-size: 11px;
+  margin: 5px 0 0;
 }
 .squareButton.blue {
   background: #0372bc;

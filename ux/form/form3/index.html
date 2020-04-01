@@ -11,11 +11,15 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <!-- script -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="comWidth">
       <!-- start -->
+      <!-- login -->
       <div class="formContainer clearfix">
         <div class="menuWrap">
           <ul>
@@ -44,6 +48,7 @@
             <div class="line">
               <p>or</p>
             </div>
+            <!-- input field -->
             <div class="field">
               <label>Email Address</label>
               <input type="email" placeholder="Enter your email address" />
@@ -54,16 +59,70 @@
             </div>
             <div class="field">
               <label>Password</label>
-              <input
-                type="password"
-                placeholder="Enter your password"
-                class="eyeBackground"
-              />
+              <input type="password" placeholder="Enter your password" />
+              <button class="button eyeButton">
+                <img
+                  src="./images/eye.svg"
+                  alt="show"
+                  onclick="changeColor()"
+                  id="imageOne"
+                />
+              </button>
               <!-- error message -->
               <!-- <div class="errMsg">
                 Some wrong text
               </div> -->
             </div>
+            <!-- textarea -->
+            <div class="field commentsBackground fieldHeight error">
+              <label>comments</label>
+              <textarea placeholder="Comments"></textarea>
+              <span></span>
+            </div>
+            <!-- radio button -->
+            <div class="radioFilterWrap">
+              <label class="cst-radio">
+                <input
+                  type="radio"
+                  name="postFilter"
+                  value="option1"
+                  checked
+                />option1
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option2" />option2
+                <span></span>
+              </label>
+              <label class="cst-radio">
+                <input type="radio" name="postFilter" value="option3" />option3
+                <span></span>
+              </label>
+            </div>
+            <!-- checkbox -->
+            <div class="radioFilterWrap">
+              <label class="checkboxWrap"
+                >One
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkboxWrap"
+                >Two
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkboxWrap"
+                >Three
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkboxWrap"
+                >Four
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <!-- login button -->
             <div class="buttonWrap">
               <button class="button squareButton blue">Sign In</button>
             </div>
@@ -73,5 +132,16 @@
       </div>
       <!-- end -->
     </div>
+    <script>
+      var image = document.getElementById("imageOne");
+
+      function changeColor() {
+        if (image.src == "./images/eye.svg") {
+          image.src = "./images/eyeCross.svg";
+        } else {
+          image.src = "./images/eye.svg";
+        }
+      }
+    </script>
   </body>
 </html>

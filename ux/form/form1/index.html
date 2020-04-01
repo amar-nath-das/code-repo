@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="mainContent">
+    <div class="comWidth">
       <!-- start -->
       <!-- login -->
       <div class="loginForm">
@@ -21,6 +21,7 @@
             <p class="error">Server side error message</p>
           </div> -->
           <form action="#">
+            <!-- email field -->
             <div class="field emailBackground error">
               <!--add class="error" for wrong input-->
               <input type="email" id="email" placeholder="Your email address" />
@@ -28,6 +29,7 @@
               <span></span>
               <!-- <p>Some wrong text</p> -->
             </div>
+            <!-- password Field -->
             <div class="field passwordBackground rightSpace error">
               <!--add class="error" for wrong input-->
               <input type="password" id="pass" placeholder="Your password" />
@@ -37,10 +39,12 @@
               <span></span>
               <!-- <p>Some wrong text</p> -->
             </div>
+            <!-- textarea -->
             <div class="field commentsBackground fieldHeight error">
               <textarea placeholder="Comments"></textarea>
               <span></span>
             </div>
+            <!-- radio button -->
             <div class="radioFilterWrap">
               <label class="cst-radio">
                 <input
@@ -60,6 +64,7 @@
                 <span></span>
               </label>
             </div>
+            <!-- checkbox -->
             <div class="radioFilterWrap">
               <label class="checkboxWrap"
                 >One
@@ -82,6 +87,7 @@
                 <span class="checkmark"></span>
               </label>
             </div>
+            <!-- button -->
             <div class="buttonWrap">
               <button
                 type="submit"

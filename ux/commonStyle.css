@@ -54,6 +54,7 @@ a {
 
 a:hover {
   color: #ccc;
+  transition: 0.3s;
 }
 
 a,
@@ -217,7 +218,7 @@ video {
 
 .button {
   border: none;
-  background: transparent;
+  background: #fff;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
