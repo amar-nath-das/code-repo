@@ -1,5 +1,3 @@
-"use strict";
-
 var documentBody = document.querySelector("body");
 var menuTrigger = document.querySelector(".navbar .navbar-trigger");
 var mobileMenuTrigger = document.querySelector(".navbar .btnMobileTrigger");

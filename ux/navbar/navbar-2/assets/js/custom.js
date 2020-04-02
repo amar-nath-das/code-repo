@@ -1,5 +1,3 @@
-"use strict";
-
 var documentBody = document.querySelector("body");
 var mobileMenuTrigger = document.querySelector(".navbar .btnMobileTrigger");
 var hoverMenuItems = documentBody.querySelectorAll(".menuNav>li");
