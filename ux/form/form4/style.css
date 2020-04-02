@@ -324,7 +324,7 @@ body {
 /* loginGraphic */
 .loginGraphic {
   float: right;
-  background: url(./images/Graphic.png) no-repeat 50% 50%;
+  background: url(./images/Graphic.png) no-repeat 50% 100%;
   height: calc(100vh - -230px);
   width: 50%;
 }

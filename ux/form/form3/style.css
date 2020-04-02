@@ -348,10 +348,54 @@ body {
 }
 
 .formWrap a {
-  font-size-adjust: 18px;
   color: #0372bc;
   text-align: center;
-  font: 16px;
+  font-size: 16px;
   display: block;
   font-weight: 500;
+}
+@media only screen and (max-width: 1199px) {
+  .comWidth {
+    width: 90%;
+  }
+  .formWrap {
+    padding: 97px 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* .formWrap {
+    padding: 97px 50px;
+  } */
+  .loginGraphic {
+    width: 190px;
+  }
+  .formWrap {
+    width: calc(100% - 312px);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .formWrap {
+    padding: 97px 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .loginGraphic,
+  .menuWrap {
+    display: none;
+  }
+  .formWrap {
+    padding: 97px 55px;
+    width: 100%;
+  }
+  .checkboxWrap {
+    margin-right: 11px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .formWrap {
+    padding: 50px 20px;
+  }
+  .formWrap a {
+    font-size: 14px;
+  }
 }

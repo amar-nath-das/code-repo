@@ -227,3 +227,49 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px rgba(247, 251, 255, 1) inset !important;
   -webkit-text-fill-color: #96adc7 !important;
 }
+@media only screen and (max-width: 480px) {
+  .comWidth {
+    width: 90%;
+  }
+  .field input,
+  .radioFilterWrap .cst-radio,
+  .field textarea,
+  .checkboxWrap,
+  .formWrap .notReg a {
+    font-size: 12px;
+  }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-size: 12px !important;
+  }
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    font-size: 12px !important;
+  }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px !important;
+  }
+  .cst-radio + .cst-radio {
+    margin-left: 14px;
+  }
+  .checkmark {
+    top: -3px;
+  }
+  .checkboxWrap {
+    padding-left: 25px;
+    margin-right: 7px;
+  }
+  .formWrap .passControl a {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}

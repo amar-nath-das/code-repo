@@ -305,7 +305,6 @@ body {
 /* checkbox */
 .checkboxWrap {
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -377,8 +376,9 @@ body {
   transform: rotate(45deg);
 }
 @media only screen and (max-width: 480px) {
-  .loginForm input {
-    font-size: 13px;
+  .field input,
+  .radioFilterWrap .cst-radio {
+    font-size: 12px;
   }
   .loginForm .field {
     padding-left: 25px;
@@ -390,22 +390,8 @@ body {
     background-size: 17px;
     background-position: 2px;
   }
-  .loginForm input::-webkit-input-placeholder {
-    font-size: 13px;
-  }
-  .loginForm input::-moz-placeholder {
-    font-size: 13px;
-  }
-  .loginForm input:-ms-input-placeholder {
-    font-size: 13px;
-  }
-  .loginForm input::-ms-input-placeholder {
-    font-size: 13px;
-  }
-  .loginForm input::placeholder {
-    font-size: 13px;
-  }
   .loginForm .passwordBackground input {
     width: 80%;
   }
+  
 }

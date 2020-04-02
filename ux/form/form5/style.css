@@ -21,7 +21,8 @@ body {
   font-size: 11px;
   margin-bottom: 10px;
 }
-.field + .field {
+.field + .field,
+.field + .radioFilterWrap {
   margin-top: 30px;
 }
 .emailBackground {
@@ -30,7 +31,8 @@ body {
 .passwordBackground {
   background: url("./images/password.png") no-repeat 95% 54%;
 }
-.field input {
+.field input,
+.field textarea {
   display: block;
   width: 100%;
   height: 63px;
@@ -45,30 +47,38 @@ body {
   box-shadow: 0 7px 49px #1fbec51c;
   border: none;
 }
-.field input::-webkit-input-placeholder {
+.field textarea {
+  line-height: 10px;
+}
+.field input::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Poppins", sans-serif;
 }
-.field input::-moz-placeholder {
+.field input::-moz-placeholder,
+.field textarea::-moz-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
-.field input:-ms-input-placeholder {
+.field input:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
 }
-.field input::-ms-input-placeholder {
+.field input::-ms-input-placeholder,
+.field textarea::-ms-input-placeholder {
   font-size: 15px;
   color: #bcbcbc;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
 }
-.field input::placeholder {
+.field input::placeholder,
+.field textarea::placeholder {
   font-size: 15px;
   color: #bcbcbc;
   text-transform: capitalize;
@@ -100,6 +110,7 @@ body {
   color: #1fbec5;
   font-size: 13px;
   float: right;
+  margin-top: 6px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 1px solid #fff;
@@ -114,9 +125,76 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* checkbox */
+/* radioFilterWrap */
+.radioFilterWrap {
+  margin-bottom: 27px;
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+}
+.cst-radio {
+  display: inline-block;
+  /* width: 24%; */
+  width: auto;
+  height: 16px;
+  position: relative;
+  color: #96adc7;
+  font-size: 14px;
+  text-transform: capitalize;
+  /* margin-left: 24px; */
+  padding-left: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cst-radio + .cst-radio {
+  margin-left: 40px;
+}
+
+.cst-radio span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #1fbec5;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+}
+
+.cst-radio span::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.cst-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+}
+
+.cst-radio input[type="radio"]:checked + span {
+  background-color: #1fbec5;
+} /* checkbox */
 .checkboxWrap {
-  padding-left: 25px;
+  padding-left: 35px;
+  margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -124,13 +202,11 @@ body {
   user-select: none;
   width: auto;
   height: 16px;
-  text-transform: capitalize;
-  color: #1fbec5;
-  margin-left: 0px;
-  font-weight: 500;
-  font-size: 12px;
-  float: left;
   position: relative;
+  color: #96adc7;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-right: 20px;
 }
 
 /* Hide the browser's default checkbox */
@@ -145,27 +221,24 @@ body {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: -2px;
+  top: -1px;
   left: 0;
-  background-color: #ffffff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
   border: 1px solid #1fbec5;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
+  transition: 0.3s;
 }
 
 /* On mouse-over, add a grey background color */
 .checkboxWrap:hover input ~ .checkmark {
   background-color: #e3f0ff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 /* When the checkbox is checked, add a blue background */
 .checkboxWrap input:checked ~ .checkmark {
-  background-color: #1fbec5;
+  background-color: #e3f0ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -182,13 +255,17 @@ body {
 
 /* Style the checkmark/indicator */
 .checkboxWrap .checkmark:after {
-  left: 4px;
-  top: 4px;
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 50%;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #1fbec5;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
 .password-view {
   position: absolute;
   right: 15px;

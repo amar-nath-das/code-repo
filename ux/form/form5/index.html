@@ -15,12 +15,15 @@
 
   <body>
     <div class="comWidth">
+      <!-- start -->
+      <!-- login -->
       <div class="formWrap">
         <!-- server error message -->
         <!-- <div class="errorMessage">
           <p class="error">Server side error message</p>
         </div> -->
         <form action="#">
+          <!-- input fields -->
           <div class="field">
             <input
               type="email"
@@ -43,11 +46,38 @@
               Some wrong text
             </div> -->
           </div>
+          <!-- textarea -->
+          <div class="field">
+            <textarea placeholder="Comments"></textarea>
+            <span></span>
+          </div>
+          <!-- radio button -->
+          <div class="radioFilterWrap">
+            <label class="cst-radio">
+              <input
+                type="radio"
+                name="postFilter"
+                value="option1"
+                checked
+              />option1
+              <span></span>
+            </label>
+            <label class="cst-radio">
+              <input type="radio" name="postFilter" value="option2" />option2
+              <span></span>
+            </label>
+            <label class="cst-radio">
+              <input type="radio" name="postFilter" value="option3" />option3
+              <span></span>
+            </label>
+          </div>
+
           <div class="field passControl clearfix">
+            <!-- checkbox -->
             <div class="radioFilterWrap">
               <label class="checkboxWrap"
-                >remember me
-                <input type="checkbox" />
+                >One
+                <input type="checkbox" checked="checked" />
                 <span class="checkmark"></span>
               </label>
             </div>
