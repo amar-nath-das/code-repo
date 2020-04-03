@@ -9,7 +9,7 @@ body {
 
 /* formWrap */
 .formWrap {
-  padding: 98px 38px 38px 38px;
+  padding: 58px 38px 38px 38px;
   max-width: 412px;
   background: #fff;
   box-shadow: 0 18px 54px #a4b9d2;
@@ -20,6 +20,13 @@ body {
   color: #fd0000;
   font-size: 11px;
   margin-bottom: 10px;
+}
+.formWrap h2 {
+  margin-bottom: 20px;
+  color: #1fbec5;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 60px;
 }
 .field + .field,
 .field + .radioFilterWrap {
@@ -48,7 +55,7 @@ body {
   border: none;
 }
 .field textarea {
-  line-height: 10px;
+  line-height: 15px;
 }
 .field input::-webkit-input-placeholder,
 .field textarea::-webkit-input-placeholder {
@@ -309,4 +316,9 @@ body {
 }
 .formWrap .notReg a {
   float: none;
+}
+@media only screen and (max-width: 480px) {
+  .formWrap {
+    padding: 58px 20px 38px 20px;
+  }
 }
