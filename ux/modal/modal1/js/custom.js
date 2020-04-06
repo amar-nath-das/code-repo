@@ -1,7 +1,11 @@
-// Quick & dirty toggle to demonstrate modal toggle behavior
+$(".modal-trigger").click(function (e) {
+  e.preventDefault();
+  dataModal = $(this).attr("data-modal");
+  $("#" + dataModal).css({ display: "block" });
+  // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+});
 
-document.getElementsByClassName("modal-toggle").onclick = function () {
-    alert(jsdjhkjshdkjfhkjshfkjhskj);   
-    e.preventDefault();
-    $('.modal').addClass('is-visible');
-};
+$(".close-modal, .modal-sandbox").click(function () {
+  $(".modal").css({ display: "none" });
+  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+});
