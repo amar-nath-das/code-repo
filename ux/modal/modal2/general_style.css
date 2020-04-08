@@ -3,6 +3,9 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .modal-trigger {
+    padding: 20px 30px;
+  }
   .modal-body h2 {
     font-size: 35px;
     margin-bottom: 20px;
