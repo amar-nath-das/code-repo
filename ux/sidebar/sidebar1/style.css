@@ -1,0 +1,35 @@
+.sideBarWrap {
+  background: #3975fa;
+  box-shadow: 0 1px 30px #3975fa73;
+  width: 96px;
+  height: 100vh;
+}
+.navWrap {
+  padding: 30px 27px;
+}
+.navWrap .logo {
+  margin-bottom: 100px;
+}
+.navWrap ul li {
+  margin-bottom: 10px;
+  padding: 20px 13px;
+  display: block;
+}
+.navWrap ul li a {
+  border-radius: 50%;
+  background: transparent;
+  padding: 20px;
+  margin-left: -20px;
+}
+.navWrap ul li:hover a {
+  background: #457efe;
+}
+.buttonWrap {
+  position: absolute;
+  bottom: 0;
+}
+.buttonWrap button {
+  height: 91px;
+  width: 96px;
+  background: #457efe;
+}

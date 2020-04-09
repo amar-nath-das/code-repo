@@ -1,0 +1,33 @@
+.sideBarWrap {
+  background: #cddc39;
+  width: 96px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+}
+
+.navWrap .logo {
+  margin-bottom: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+.navWrap ul li {
+  margin-bottom: 10px;
+  padding: 20px 40px;
+  display: block;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+.navWrap ul li:hover {
+  background: #c1d21e;
+  border-left: 3px solid #fff;
+  transition: 0.3s;
+}
+.buttonWrap {
+  position: absolute;
+  bottom: 0;
+}
+.buttonWrap button {
+  height: 91px;
+  width: 96px;
+  background: #457efe;
+}
