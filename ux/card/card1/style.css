@@ -2,42 +2,64 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .cardWrap {
-  width: 100%;
+  width: 80%;
   max-width: 390px;
   border-radius: 7px;
   box-shadow: 0 1px 30px #00000026;
-  padding: 30px;
+
   /* only for middle align */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.cardWrap h2 {
+.cardContent {
+  padding: 30px 54px 10px 30px;
+}
+.cardContent .time {
+  font-size: 10px;
+  color: #bbbbbb;
+  margin-bottom: 16px;
+}
+.cardContent .time i {
+  margin-right: 8px;
+}
+.cardContent h2 {
   color: #202020;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.cardWrap p {
+.cardContent p {
   color: #9f9f9f;
   font-size: 11px;
   line-height: 20px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-.cardWrap ul li {
+.cardContent ul li {
   display: inline-block;
   border-radius: 50%;
   width: 23px;
   height: 23px;
-  margin-right: 4px;
+  margin-right: 2px;
   background: #cddc39;
 }
-.cardWrap ul li:last-child {
+.cardContent ul li:last-child {
   margin-right: 0px;
 }
-/* .buttonWrap button {
-  width: 50px;
-  background: #000;
-} */
+.cardContent ul li a p {
+  color: #fff;
+  display: table;
+  font-size: 9px;
+  padding: 2px 3px;
+}
+.buttonWrap button {
+  float: right;
+  background: #cddc39;
+  border-radius: 7px 0px;
+  padding: 4px 11px;
+}
+.buttonWrap button img {
+  margin-bottom: 1px;
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.cardWrap {
+  width: 80%;
+  max-width: 301px;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px #00000026;
+  background: #fff;
+  padding: 24px;
+  /* only for middle align */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.folder figure {
+  float: left;
+}
+.folder figure img {
+  margin-bottom: 24px;
+}
+.folder ul {
+  float: right;
+}
+.folder ul li {
+  display: inline-block;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: -18px;
+}
+.cardWrap h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #010e2a;
+  margin-bottom: 24px;
+}
+
+.cardWrap h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #676e7c;
+  display: inline-block;
+}

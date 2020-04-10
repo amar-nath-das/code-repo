@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.cardWrap {
+  width: 80%;
+  max-width: 340px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 30px 30px 15px 30px;
+  background-image: linear-gradient(#465aff, #232d80);
+  /* only for middle align */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardContent {
+  margin-bottom: 15px;
+}
+.cardDetails {
+  float: left;
+  color: #fff;
+  padding-top: 17px;
+}
+.cardDetails h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 30px;
+}
+.cardDetails h3 {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.cardGraphics {
+  float: right;
+}
+p {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #fff;
+  float: right;
+  font-weight: 800;
+}
+@media only screen and (max-width: 375px) {
+  .cardWrap {
+    padding: 20px;
+  }
+}
