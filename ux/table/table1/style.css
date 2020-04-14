@@ -9,6 +9,7 @@ body {
   margin: 0px auto;
   box-shadow: 0px 1px 40px #b3b5b826;
   background: #ffffff;
+  overflow-x: auto;
   /* for middle alignment */
   position: fixed;
   left: 50%;
