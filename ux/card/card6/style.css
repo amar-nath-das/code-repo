@@ -1,0 +1,94 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.cardWrap {
+  width: 80%;
+  max-width: 301px;
+  border-radius: 5px 40px 5px 5px;
+  box-shadow: 0 1px 15px #00000026;
+  background: #f2ca51;
+  padding: 24px;
+  /* only for middle align */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  margin-bottom: 20px;
+}
+.headDetail {
+  float: left;
+}
+.headDetail ul li {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+.headDetail ul li:last-child {
+  margin-right: 0px;
+}
+.headDetail ul li::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -11px;
+  height: 5px;
+  width: 5px;
+  background: #e0b83f;
+  border-radius: 50%;
+}
+.headDetail ul li:last-child::after {
+  content: normal;
+}
+.headDetail ul li p {
+  font-size: 13px;
+  color: #2d2c4e;
+}
+.cardWrap h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2c4e;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.profile {
+  float: right;
+  display: inline-block;
+  border-radius: 50%;
+  background: #e0b83f;
+}
+.profile p {
+  color: #726049;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 14px;
+}
+.list {
+  height: 50px;
+  background: #2d2c4e;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.list::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  height: 40px;
+  width: 7px;
+  border-radius: 10px;
+  background: #f94f63;
+}
+
+.list + .list {
+  margin-top: 10px;
+}
+
+.listName {
+  float: left;
+}
+.listDate {
+  float: right;
+}
